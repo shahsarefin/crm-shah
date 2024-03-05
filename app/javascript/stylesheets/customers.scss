@@ -1,0 +1,43 @@
+.customer-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); // Creates 4 columns of equal width
+  gap: 20px; // Adjust as necessary for spacing between cards
+  margin-bottom: 20px; // Spacing between rows
+
+  .customer-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    background: #fff; // Background color for the card
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Shadow to make it look like a card
+    border-radius: 5px; // Rounded corners for card
+    text-align: center;
+
+    &.customer-image img {
+      width: auto; // Adjust width or let it be auto to maintain aspect ratio
+      height: 150px; // Adjust height as necessary
+      border-radius: 50%; // Circle image
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .customer-row {
+    grid-template-columns: repeat(3, 1fr); // 3 columns for smaller screens
+  }
+}
+
+@media (max-width: 992px) {
+  .customer-row {
+    grid-template-columns: repeat(2, 1fr); // 2 columns for even smaller screens
+  }
+}
+
+@media (max-width: 768px) {
+  .customer-row {
+    grid-template-columns: 1fr; // 1 column for mobile screens
+  }
+}

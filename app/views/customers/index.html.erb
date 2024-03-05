@@ -2,5 +2,5 @@
 <%= link_to 'Alphabetized', customers_alphabetized_path %> |
 <%= link_to 'Missing Email', customers_missing_email_path %>
 
-<h1>Customers#index</h1>
-<%= render partial: 'customer', collection: @customers %>
+<h1>All Customers</h1>
+<%= render partial: 'customers/customer', collection: @customers, as: :customer %>

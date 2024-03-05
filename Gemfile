@@ -6,6 +6,10 @@ ruby "3.3.0"
 gem "activeadmin"
 gem "devise"
 gem 'sassc', '~> 2.0'
+gem 'webpacker', '~> 5.0'
+gem 'image_processing', '~> 1.2'
+
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.3", ">= 7.1.3.2"
 
